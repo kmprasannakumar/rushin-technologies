@@ -1,0 +1,22 @@
+{
+  "name": "rushin-technologies-website",
+  "version": "1.0.0",
+  "description": "Official website for RushIn Technologies",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/css/tailwind.css --watch",
+    "serve": "npx http-server -c-1 . -p 8080",
+    "images:fetch": "node ./tools/fetch-images.js"
+  },
+  "author": "RushIn Technologies",
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "node-fetch": "^2.6.7",
+    "postcss": "^8.5.3",
+    "sharp": "^0.32.6"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.2.1"
+  }
+}
