@@ -25,23 +25,92 @@
   });
 
   // ===== Mobile Menu =====
-  const mobileBtn = document.querySelector('[id^="mobileMenuBtn"]');
-  const mobileMenu = document.querySelector('[id^="mobileMenu"]');
+  const mobileMenuPairs = [
+    {
+      btn: document.getElementById("mobileMenuBtnIndex"),
+      menu: document.getElementById("mobileMenuIndex")
+    },
+    {
+      btn: document.getElementById("mobileMenuBtnContact"),
+      menu: document.getElementById("mobileMenuContact")
+    }
+  ];
 
-  if (mobileBtn && mobileMenu) {
-    mobileBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
+  mobileMenuPairs.forEach(({ btn, menu }) => {
+    if (!btn || !menu) return;
+
+    const getFocusableElements = () => {
+      return Array.from(
+        menu.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])')
+      );
+    };
+
+    const closeMenu = () => {
+      menu.classList.add("hidden");
+      menu.setAttribute("aria-hidden", "true");
+      btn.setAttribute("aria-expanded", "false");
+      btn.focus();
+    };
+
+    const openMenu = () => {
+      menu.classList.remove("hidden");
+      menu.setAttribute("aria-hidden", "false");
+      btn.setAttribute("aria-expanded", "true");
+
+      const focusable = getFocusableElements();
+      if (focusable.length > 0) {
+        focusable[0].focus();
+      }
+    };
+
+    menu.setAttribute("aria-hidden", menu.classList.contains("hidden") ? "true" : "false");
+    btn.setAttribute("aria-expanded", "false");
+
+    btn.addEventListener("click", function () {
+      if (menu.classList.contains("hidden")) {
+        openMenu();
+      } else {
+        closeMenu();
+      }
     });
 
-    // Close menu when link clicked
-    const links = mobileMenu.querySelectorAll("a");
-
-    links.forEach(link => {
+    menu.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
-        mobileMenu.classList.add("hidden");
+        closeMenu();
       });
     });
-  }
+
+    menu.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeMenu();
+        return;
+      }
+
+      if (event.key !== "Tab" || menu.classList.contains("hidden")) return;
+
+      const focusable = getFocusableElements();
+      if (focusable.length === 0) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      const active = document.activeElement;
+
+      if (event.shiftKey && active === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && active === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !menu.classList.contains("hidden")) {
+        closeMenu();
+      }
+    });
+  });
 
   // ===== Smooth Scroll =====
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {

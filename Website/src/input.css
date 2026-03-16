@@ -66,3 +66,13 @@ body{
 .gradient-bg{
   background:linear-gradient(135deg,#ffffff,#eef2ff);
 }
+
+@media@media (max-width: 640px){
+  .whatsapp-btn{
+    bottom: 70px;
+  }
+} (max-width: 640px){
+  .whatsapp-btn{
+    bottom: 70px;
+  }
+}
