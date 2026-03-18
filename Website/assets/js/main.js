@@ -177,6 +177,95 @@
     yearEl.textContent = new Date().getFullYear();
   }
 
+  // ===== Form Subject Routing =====
+  const subjectByInquiryType = {
+    support: "[Support Request] RushIn Technologies Website",
+    career: "[Career Application] RushIn Technologies Website",
+    lead: "[New Lead] RushIn Technologies Website",
+    general: "[New Lead] RushIn Technologies Website"
+  };
+
+  document.querySelectorAll('form[data-subject-routing="true"]').forEach((form) => {
+    const subjectInput = form.querySelector('input[name="_subject"]');
+    const inquirySelect = form.querySelector('[data-subject-select]');
+
+    if (!subjectInput || !inquirySelect) return;
+
+    const applySubject = () => {
+      const selected = inquirySelect.value;
+      subjectInput.value = subjectByInquiryType[selected] || subjectByInquiryType.lead;
+    };
+
+    inquirySelect.addEventListener("change", applySubject);
+    form.addEventListener("submit", applySubject);
+    applySubject();
+  });
+
+  // ===== Async Form Submission UX =====
+  document.querySelectorAll('form[data-ajax-form="true"]').forEach((form) => {
+    const submitButton = form.querySelector('button[type="submit"]');
+    const statusEl = form.querySelector("[data-form-status]");
+    const action = form.getAttribute("action");
+    const thankyouUrl = form.getAttribute("data-thankyou-url") || "thankyou.html";
+
+    if (!submitButton || !statusEl || !action) return;
+
+    const defaultButtonText = submitButton.textContent.trim();
+
+    const setStatus = (type, text) => {
+      statusEl.classList.remove("hidden", "bg-green-50", "text-green-700", "bg-red-50", "text-red-700", "bg-blue-50", "text-blue-700");
+
+      if (type === "success") {
+        statusEl.classList.add("bg-green-50", "text-green-700");
+      } else if (type === "error") {
+        statusEl.classList.add("bg-red-50", "text-red-700");
+      } else {
+        statusEl.classList.add("bg-blue-50", "text-blue-700");
+      }
+
+      statusEl.innerHTML = text;
+    };
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      submitButton.disabled = true;
+      submitButton.classList.add("opacity-70", "cursor-not-allowed");
+      submitButton.textContent = "Sending...";
+      setStatus("loading", "Sending your message...");
+
+      try {
+        const formData = new FormData(form);
+        const response = await fetch(action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json"
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error("Form submission failed");
+        }
+
+        form.reset();
+        setStatus(
+          "success",
+          `Thanks, your message has been sent successfully. We'll get back within 24 hours. <a href="${thankyouUrl}" class="underline font-medium">View confirmation page</a>.`
+        );
+      } catch (error) {
+        setStatus(
+          "error",
+          "We could not send your message right now. Please try again in a moment or email info@rushintech.in."
+        );
+      } finally {
+        submitButton.disabled = false;
+        submitButton.classList.remove("opacity-70", "cursor-not-allowed");
+        submitButton.textContent = defaultButtonText;
+      }
+    });
+  });
+
   // ===== Debug: verify Tailwind CSS loaded and applied =====
   // This check inspects a commonly-used utility (.grid). If the CSS isn't applied,
   // the computed display will not be 'grid'. We log the result to the console to

@@ -1,0 +1,41 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">RushIn Technologies social preview image</title>
+  <desc id="desc">RushIn Technologies helps startups and businesses with AI automation, web development, digital marketing, and lead generation.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1730"/>
+      <stop offset="0.58" stop-color="#123D8A"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="pill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="blur1" x="-200" y="-200" width="1600" height="1030" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="80"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g filter="url(#blur1)" opacity="0.35">
+    <circle cx="170" cy="90" r="170" fill="#60A5FA"/>
+    <circle cx="1040" cy="510" r="180" fill="#34D399"/>
+  </g>
+
+  <rect x="66" y="58" width="1068" height="514" rx="28" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.22"/>
+
+  <rect x="102" y="96" width="248" height="42" rx="21" fill="url(#pill)"/>
+  <text x="226" y="123" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="white" letter-spacing="0.06em">RUSHIN TECHNOLOGIES</text>
+
+  <text x="102" y="228" font-family="Sora, Inter, Segoe UI, Arial, sans-serif" font-size="66" font-weight="800" fill="white">Powering Your Digital Growth</text>
+
+  <text x="102" y="286" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="500" fill="#E2E8F0">AI Automation • Web Development • Digital Marketing • Lead Generation</text>
+
+  <rect x="102" y="354" width="224" height="58" rx="14" fill="url(#pill)"/>
+  <text x="214" y="391" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="white">rushintech.in</text>
+
+  <rect x="364" y="354" width="258" height="58" rx="14" fill="#FFFFFF" fill-opacity="0.15" stroke="#FFFFFF" stroke-opacity="0.35"/>
+  <text x="493" y="391" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="600" fill="#ECFEFF">Bengaluru, India</text>
+</svg>

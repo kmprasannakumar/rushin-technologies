@@ -34,7 +34,10 @@
 <meta property="og:description" content="Helping startups and businesses grow with AI Automation, Digital Marketing, and Lead Generation.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rushintech.in">
-<meta property="og:image" content="https://rushintech.in/assets/images/logo.png">
+<meta property="og:image" content="https://rushintech.in/assets/images/social-preview.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="RushIn Technologies - Powering Your Digital Growth">
 <meta property="og:site_name" content="RushIn Technologies">
 <meta property="og:locale" content="en_IN">
 
@@ -42,7 +45,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="RushIn Technologies">
 <meta name="twitter:description" content="AI Automation, Digital Marketing and Lead Generation Services">
-<meta name="twitter:image" content="https://rushintech.in/assets/images/logo.png">
+<meta name="twitter:image" content="https://rushintech.in/assets/images/social-preview.svg">
+<meta name="twitter:image:alt" content="RushIn Technologies - Powering Your Digital Growth">
 <meta name="twitter:url" content="https://rushintech.in/">
 
     <meta charset="UTF-8" />
@@ -50,8 +54,145 @@
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/src/css/tailwind.css" />
+
+  <style>
+    :root {
+      --rt-bg: #f8fafc;
+      --rt-surface: #ffffff;
+      --rt-text: #0f172a;
+      --rt-muted: #475569;
+      --rt-line: #e2e8f0;
+      --rt-brand: #2563eb;
+      --rt-brand-strong: #1d4ed8;
+      --rt-brand-soft: #dbeafe;
+      --rt-growth: #10b981;
+      --rt-growth-strong: #059669;
+      --rt-growth-soft: #d1fae5;
+    }
+
+    body {
+      background: var(--rt-bg);
+      color: var(--rt-text);
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Sora", "Inter", system-ui, sans-serif;
+      letter-spacing: -0.02em;
+    }
+
+    .text-gray-500,
+    .text-gray-600,
+    .text-slate-500,
+    .text-slate-600 {
+      color: var(--rt-muted) !important;
+    }
+
+    .bg-gray-50,
+    .bg-slate-50 {
+      background-color: var(--rt-bg) !important;
+    }
+
+    .bg-white {
+      background-color: var(--rt-surface) !important;
+    }
+
+    .border,
+    .border-gray-200,
+    .border-gray-300,
+    .border-slate-200,
+    .border-slate-300 {
+      border-color: var(--rt-line) !important;
+    }
+
+    .text-blue-600,
+    .text-blue-700 {
+      color: var(--rt-brand) !important;
+    }
+
+    .text-green-600,
+    .text-emerald-600,
+    .text-emerald-700 {
+      color: var(--rt-growth-strong) !important;
+    }
+
+    .bg-blue-50 {
+      background-color: var(--rt-brand-soft) !important;
+    }
+
+    .bg-emerald-50,
+    .bg-green-50 {
+      background-color: var(--rt-growth-soft) !important;
+    }
+
+    .bg-blue-600 {
+      background-image: linear-gradient(90deg, var(--rt-brand), var(--rt-growth));
+      background-color: transparent !important;
+      border: none !important;
+    }
+
+    .hover\:bg-blue-700:hover {
+      background-image: linear-gradient(90deg, var(--rt-brand-strong), var(--rt-growth-strong));
+      background-color: transparent !important;
+    }
+
+    .focus\:ring-blue-200:focus {
+      --tw-ring-color: rgba(37, 99, 235, 0.28) !important;
+    }
+
+    .from-blue-600 {
+      --tw-gradient-from: var(--rt-brand) var(--tw-gradient-from-position) !important;
+      --tw-gradient-to: rgb(37 99 235 / 0) var(--tw-gradient-to-position) !important;
+    }
+
+    .to-indigo-600 {
+      --tw-gradient-to: var(--rt-growth) var(--tw-gradient-to-position) !important;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.92) !important;
+      border-bottom-color: var(--rt-line) !important;
+    }
+
+    .shadow,
+    .shadow-sm {
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08) !important;
+    }
+
+    .shadow-xl {
+      box-shadow: 0 24px 50px rgba(15, 23, 42, 0.14) !important;
+    }
+
+    .hover\:shadow-lg:hover,
+    .hover\:shadow-md:hover {
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14) !important;
+      transform: translateY(-2px);
+    }
+
+    a,
+    button {
+      transition: all 220ms ease;
+    }
+
+    #home {
+      background-image: radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.12), transparent 35%), radial-gradient(circle at 90% 0%, rgba(16, 185, 129, 0.14), transparent 32%);
+    }
+
+    #contact .rounded-2xl,
+    #contact .rounded-xl {
+      border-color: var(--rt-line) !important;
+    }
+  </style>
 
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -72,6 +213,7 @@ gtag('config', 'GA_MEASUREMENT_ID');
  "logo": "https://rushintech.in/assets/images/logo.png",
  "image": "https://rushintech.in/assets/images/logo.png",
  "description": "RushIn Technologies provides AI Automation, Digital Marketing and Lead Generation services for startups and businesses.",
+ "email": "info@rushintech.in",
  "areaServed": "IN",
  "address": {
    "@type": "PostalAddress",
@@ -79,11 +221,19 @@ gtag('config', 'GA_MEASUREMENT_ID');
    "addressRegion": "Karnataka",
    "addressCountry": "India"
  },
- "contactPoint": {
-   "@type": "ContactPoint",
-   "telephone": "+91 9019660247",
-   "contactType": "customer service"
- },
+ "contactPoint": [
+   {
+     "@type": "ContactPoint",
+     "telephone": "+91 9019660247",
+     "contactType": "customer service",
+     "email": "support@rushintech.in"
+   },
+   {
+     "@type": "ContactPoint",
+     "contactType": "sales",
+     "email": "sales@rushintech.in"
+   }
+ ],
  "sameAs": [
    "https://www.instagram.com/rushintech",
    "https://www.linkedin.com/company/rushintechnologies"
@@ -120,18 +270,20 @@ gtag('config', 'GA_MEASUREMENT_ID');
 
   <!-- ====== Navbar ====== -->
 
-<header class="bg-white border-b sticky top-0 z-50">
+<header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-md shadow-sm">
 
-<div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+<div class="max-w-6xl mx-auto px-5 md:px-6 py-3.5 flex items-center justify-between">
 
 <!-- Logo -->
-<a href="index.html" class="flex items-center gap-2">
+<a href="index.html" class="group flex items-center gap-3">
 
-<img src="assets/images/logo.png" class="w-8 h-8" alt="RushIn Logo">
+<span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-50 to-emerald-50 ring-1 ring-slate-200 shadow-sm transition group-hover:shadow">
+<img src="assets/images/logo.png" class="w-7 h-7" alt="RushIn Logo">
+</span>
 
 <div class="leading-tight">
-<p class="font-semibold text-gray-900">RushIn Technologies</p>
-<p class="text-xs text-gray-500">Rush Into Innovation</p>
+<p class="text-lg font-semibold tracking-tight text-slate-900 md:text-[1.35rem]">RushIn Technologies</p>
+<p class="text-xs text-slate-500">Rush Into Innovation</p>
 </div>
 
 </a>
@@ -210,37 +362,53 @@ Contact
     <!-- ====== Hero ====== -->
 
   
-   <section id="home" class="relative pt-16 pb-16 bg-gradient-to-br from-white to-slate-50 overflow-hidden">
+  <section id="home" class="relative pt-14 pb-20 bg-gradient-to-br from-white via-slate-50 to-emerald-50/40 overflow-hidden border-b border-slate-200">
 
   <!-- Glow Background -->
   <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
-    <div class="absolute top-10 left-1/4 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-40"></div>
-    <div class="absolute bottom-10 right-1/4 w-72 h-72 bg-purple-200 rounded-full blur-3xl opacity-40"></div>
+    <div class="absolute top-6 left-[18%] w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-35"></div>
+    <div class="absolute -bottom-6 right-[18%] w-72 h-72 bg-emerald-200 rounded-full blur-3xl opacity-30"></div>
   </div>
 
   <div class="max-w-6xl mx-auto px-6 relative">
 
       
-        <div class="grid md:grid-cols-2 gap-6 items-center">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">RushIn Technologies</h1>
-            <p class="mt-3 text-xl text-gray-600">Rush Into Innovation — building modern digital products, automations and growth strategies for startups and SMEs.</p>
+            <span class="inline-flex items-center rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-blue-700">Powering Your Digital Growth</span>
+            <h1 class="mt-4 text-4xl sm:text-5xl md:text-6xl font-extrabold leading-[1.08] text-slate-900">RushIn Technologies</h1>
+            <p class="mt-4 text-lg md:text-xl text-slate-600 max-w-xl">Rush Into Innovation with modern digital products, AI automation, and growth systems that help your business scale faster.</p>
 
             <p class="text-xs text-gray-400 mt-2">
 Helping startups and businesses build scalable digital solutions.
 </p>
 
-<div class="mt-4 flex flex-col sm:flex-row gap-4">
+<div class="mt-6 flex flex-col sm:flex-row gap-4">
 
-<a href="#services" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:scale-105 transition">
+<a href="#services" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold shadow-sm hover:scale-[1.02] transition">
 Our Services
 </a>
 
-<a href="#contact" class="inline-block border px-6 py-3 rounded-lg hover:scale-105 transition">
+<a href="#contact" class="inline-block border border-slate-300 bg-white/90 px-6 py-3 rounded-xl font-semibold text-slate-700 hover:scale-[1.02] hover:bg-white transition">
 Get in Touch
 </a>
 
 </div>
+
+            <div class="mt-6 grid grid-cols-3 gap-3 max-w-lg text-center">
+              <div class="rounded-xl border border-slate-200 bg-white/90 px-3 py-3 shadow-sm">
+                <p class="text-xl font-extrabold text-slate-900">24h</p>
+                <p class="text-xs text-slate-500">Response Time</p>
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white/90 px-3 py-3 shadow-sm">
+                <p class="text-xl font-extrabold text-slate-900">AI+</p>
+                <p class="text-xs text-slate-500">Automation Focus</p>
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white/90 px-3 py-3 shadow-sm">
+                <p class="text-xl font-extrabold text-slate-900">B2B</p>
+                <p class="text-xs text-slate-500">Startup Partner</p>
+              </div>
+            </div>
 
             <ul class="mt-6 grid grid-cols-2 gap-2 text-sm text-gray-600">
               <li>Web Development</li>
@@ -249,38 +417,26 @@ Get in Touch
               <li>Lead Generation</li>
             </ul>
 
-            <div class="mt-6">
-  <p class="text-xs text-gray-400 mb-3">Technologies we work with</p>
+            <div class="mt-6 rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm">
+  <p class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-3">Technologies We Work With</p>
 
-  <div class="grid grid-cols-5 sm:grid-cols-5 md:grid-cols-5 gap-4 items-center opacity-80">
-    
-
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="h-6 mx-auto" alt="HTML">
-
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="h-6 mx-auto" alt="CSS">
-
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="h-6 mx-auto" alt="JavaScript">
-
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="h-6 mx-auto" alt="React">
-
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="h-6 mx-auto" alt="NodeJS">
-
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="h-6 mx-auto" alt="Python">
-
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="h-6 mx-auto" alt="MySQL">
-
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="h-6 mx-auto" alt="MongoDB">
-
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="h-6 mx-auto" alt="Docker">
-
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="h-6 mx-auto" alt="Git">
-
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2.5">
+    <div class="flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="h-5 w-5" alt="HTML"><span class="text-xs font-medium text-slate-700">HTML5</span></div>
+    <div class="flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="h-5 w-5" alt="CSS"><span class="text-xs font-medium text-slate-700">CSS3</span></div>
+    <div class="flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="h-5 w-5" alt="JavaScript"><span class="text-xs font-medium text-slate-700">JavaScript</span></div>
+    <div class="flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="h-5 w-5" alt="React"><span class="text-xs font-medium text-slate-700">React</span></div>
+    <div class="flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="h-5 w-5" alt="NodeJS"><span class="text-xs font-medium text-slate-700">Node.js</span></div>
+    <div class="flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="h-5 w-5" alt="Python"><span class="text-xs font-medium text-slate-700">Python</span></div>
+    <div class="flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="h-5 w-5" alt="MySQL"><span class="text-xs font-medium text-slate-700">MySQL</span></div>
+    <div class="flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="h-5 w-5" alt="MongoDB"><span class="text-xs font-medium text-slate-700">MongoDB</span></div>
+    <div class="flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="h-5 w-5" alt="Docker"><span class="text-xs font-medium text-slate-700">Docker</span></div>
+    <div class="flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="h-5 w-5" alt="Git"><span class="text-xs font-medium text-slate-700">Git</span></div>
   </div>
 </div>
           </div>
 
-          <div class="md:order-last">
-  <div class="w-full h-40 md:h-72 rounded-lg overflow-hidden flex items-center justify-center bg-gradient-to-tr from-blue-50 to-white">
+            <div class="md:order-last">
+          <div class="w-full h-44 md:h-80 rounded-2xl overflow-hidden flex items-center justify-center bg-gradient-to-tr from-blue-50 via-white to-emerald-50 border border-slate-200 shadow-xl">
               <!-- Inline decorative illustration representing team collaboration on a roadmap. No external images. -->
               <svg role="img" aria-labelledby="heroIllustrationTitle heroIllustrationDesc" viewBox="0 0 800 450" class="w-full h-40 md:h-72 object-cover" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
                 <title id="heroIllustrationTitle">Team collaborating on a project roadmap</title>
@@ -365,34 +521,27 @@ Get in Touch
 
     
   <!-- Trusted Technologies -->
-<section class="py-8 bg-white">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    
- <p class="text-sm font-semibold mb-6 tracking-wider bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-  POWERED BY MODERN TECHNOLOGIES
-</p>
-<div class="flex justify-center items-center gap-8 flex-wrap mt-6">
+<section class="py-10 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="rounded-2xl border border-slate-200 bg-gradient-to-r from-blue-50/70 via-white to-emerald-50/70 p-6 shadow-sm">
+      <div class="text-center">
+        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">Technology Stack</p>
+        <h3 class="mt-2 text-2xl font-bold text-slate-900">Powered By Modern Technologies</h3>
+        <p class="mt-2 text-sm text-slate-600">Production-ready tools and frameworks trusted for scalable startup growth.</p>
+      </div>
 
-  <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-semibold hover:bg-blue-100 hover:text-blue-600 transition duration-300">React</span>
-
-  <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-semibold hover:bg-green-100 hover:text-green-600 transition duration-300">Node.js</span>
-
-  <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-semibold hover:bg-yellow-100 hover:text-yellow-600 transition duration-300">Python</span>
-
-  <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-semibold hover:bg-blue-200 hover:text-blue-700 transition duration-300">Docker</span>
-
-  <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-semibold hover:bg-green-200 hover:text-green-700 transition duration-300">MongoDB</span>
-
-  <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-semibold hover:bg-orange-200 hover:text-orange-600 transition duration-300">MySQL</span>
-
-  <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-semibold hover:bg-red-200 hover:text-red-600 transition duration-300">Java</span>
-
-  <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-semibold hover:bg-blue-200 hover:text-blue-700 transition duration-300">AWS</span>
-
-  <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 font-semibold hover:bg-gray-300 hover:text-black transition duration-300">Git</span>
-
-</div>
-
+      <div class="mt-6 flex justify-center items-center gap-3 flex-wrap">
+        <span class="px-4 py-2.5 rounded-full border border-blue-200 bg-white text-slate-700 text-sm font-semibold hover:bg-blue-50 hover:text-blue-700">React</span>
+        <span class="px-4 py-2.5 rounded-full border border-emerald-200 bg-white text-slate-700 text-sm font-semibold hover:bg-emerald-50 hover:text-emerald-700">Node.js</span>
+        <span class="px-4 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:bg-blue-50 hover:text-blue-700">Python</span>
+        <span class="px-4 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:bg-blue-50 hover:text-blue-700">Docker</span>
+        <span class="px-4 py-2.5 rounded-full border border-emerald-200 bg-white text-slate-700 text-sm font-semibold hover:bg-emerald-50 hover:text-emerald-700">MongoDB</span>
+        <span class="px-4 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:bg-blue-50 hover:text-blue-700">MySQL</span>
+        <span class="px-4 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:bg-blue-50 hover:text-blue-700">Java</span>
+        <span class="px-4 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:bg-blue-50 hover:text-blue-700">AWS</span>
+        <span class="px-4 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:bg-slate-100 hover:text-slate-900">Git</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1043,6 +1192,12 @@ Get in Touch
 
     </div>
 
+    <div class="text-center mt-10">
+      <a href="internship-apply.html" class="inline-flex items-center justify-center rounded-lg bg-blue-600 px-6 py-3 text-white font-semibold shadow-sm transition hover:bg-blue-700">
+        Apply for Internship
+      </a>
+    </div>
+
   </div>
 </section>
 
@@ -1323,122 +1478,125 @@ Get in Touch
 </section>
 
     <!-- ====== Contact ====== -->
-    <section id="contact" class="py-16 bg-gradient-to-t from-white to-slate-50">
-      <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-8">
-        <div>
-          <h3 class="text-2xl font-bold">Get in touch</h3>
-          <p class="mt-2 text-gray-600">
-            Have a project idea, business inquiry, or internship question? 
-            Reach out to <strong>RushIn Technologies</strong> and our team will respond within one business day.
-      </p>
-          <ul class="mt-6 space-y-4 text-gray-700">
+    <section id="contact" class="relative py-20 bg-slate-50 overflow-hidden">
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute -top-16 right-10 h-56 w-56 rounded-full bg-blue-200/40 blur-3xl"></div>
+        <div class="absolute bottom-0 left-10 h-52 w-52 rounded-full bg-cyan-200/40 blur-3xl"></div>
+      </div>
 
-<li class="flex items-center gap-3">
-<span class="text-blue-600 text-lg">📧</span>
-<span>
-<strong>Email:</strong>
-<a href="mailto:prasannakumarkm@rushintech.in" class="text-blue-600 hover:underline">
-prasannakumarkm@rushintech.in
-</a>
-</span>
-</li>
+      <div class="relative max-w-6xl mx-auto px-6 grid lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-5 bg-white/80 backdrop-blur border border-slate-200 rounded-2xl p-7 shadow-sm">
+          <span class="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700 tracking-wide uppercase">Contact Team</span>
+          <h3 class="mt-4 text-3xl font-extrabold text-slate-900">Get in Touch</h3>
+          <p class="mt-3 text-slate-600 leading-relaxed">
+            Have a project idea, business inquiry, or internship question? Reach out to
+            <strong>RushIn Technologies</strong>. We reply within one business day.
+          </p>
 
-<li class="flex items-center gap-3">
-<span class="text-green-600 text-lg">📱</span>
-<span>
-<strong>WhatsApp:</strong>
-<a href="https://wa.me/919019660247" class="text-blue-600 hover:underline">
-+91 9019660247
-</a>
-</span>
-</li>
+          <div class="mt-6 grid sm:grid-cols-2 gap-3">
+            <a href="mailto:info@rushintech.in" class="rounded-xl border border-blue-100 bg-blue-50 px-4 py-3 transition hover:shadow-sm">
+              <p class="text-[11px] font-semibold uppercase tracking-wide text-blue-700">General Inquiries</p>
+              <p class="mt-1 text-sm font-medium text-slate-900">info@rushintech.in</p>
+            </a>
+            <a href="mailto:support@rushintech.in" class="rounded-xl border border-emerald-100 bg-emerald-50 px-4 py-3 transition hover:shadow-sm">
+              <p class="text-[11px] font-semibold uppercase tracking-wide text-emerald-700">Support</p>
+              <p class="mt-1 text-sm font-medium text-slate-900">support@rushintech.in</p>
+            </a>
+            <a href="mailto:sales@rushintech.in" class="rounded-xl border border-amber-100 bg-amber-50 px-4 py-3 transition hover:shadow-sm">
+              <p class="text-[11px] font-semibold uppercase tracking-wide text-amber-700">Business / Sales</p>
+              <p class="mt-1 text-sm font-medium text-slate-900">sales@rushintech.in</p>
+            </a>
+            <a href="mailto:careers@rushintech.in" class="rounded-xl border border-violet-100 bg-violet-50 px-4 py-3 transition hover:shadow-sm">
+              <p class="text-[11px] font-semibold uppercase tracking-wide text-violet-700">Careers</p>
+              <p class="mt-1 text-sm font-medium text-slate-900">careers@rushintech.in</p>
+            </a>
+          </div>
 
-<li class="flex items-center gap-3">
-<span class="text-pink-600 text-lg">📸</span>
-<span>
-<strong>Instagram:</strong>
-<a href="https://www.instagram.com/rushintech" class="text-blue-600 hover:underline">
-@rushintech
-</a>
-</span>
-</li>
-
-<li class="flex items-center gap-3">
-<span class="text-blue-700 text-lg">💼</span>
-<span>
-<strong>LinkedIn:</strong>
-<a href="https://www.linkedin.com/company/rushintechnologies" class="text-blue-600 hover:underline">
-RushIn Technologies
-</a>
-</span>
-</li>
-
-<li class="flex items-center gap-3">
-<span class="text-red-500 text-lg">📍</span>
-<span>
-<strong>Office Location:</strong> Bengaluru, Karnataka, India
-</span>
-</li>
-
-</ul>
+          <div class="mt-6 space-y-3 text-sm text-slate-700">
+            <p><span class="font-semibold">WhatsApp:</span> <a href="https://wa.me/919019660247" class="text-blue-600 hover:underline">+91 9019660247</a></p>
+            <p><span class="font-semibold">Instagram:</span> <a href="https://www.instagram.com/rushintech" class="text-blue-600 hover:underline">@rushintech</a></p>
+            <p><span class="font-semibold">LinkedIn:</span> <a href="https://www.linkedin.com/company/rushintechnologies" class="text-blue-600 hover:underline">RushIn Technologies</a></p>
+            <p><span class="font-semibold">Office:</span> Bengaluru, Karnataka, India</p>
+          </div>
         </div>
-        <div>
-     <!-- Contact Form -->
-<form action="https://formspree.io/f/mvzwwgvw" method="POST" class="space-y-4 bg-white p-6 rounded shadow-sm">
 
-<input type="hidden" name="_subject" value="New message from RushIn Technologies website">
-<input type="hidden" name="_next" value="https://rushintech.in/thankyou.html">
-<div>
-<label for="contact-name" class="block text-sm font-medium text-gray-700">Name</label>
-<input id="contact-name" type="text" name="name" class="mt-1 w-full border rounded px-3 py-2" placeholder="Your name" required>
-</div>
+        <div class="lg:col-span-7">
+          <!-- Contact Form -->
+          <form action="https://formspree.io/f/mvzwwgvw" method="POST" data-subject-routing="true" data-ajax-form="true" data-thankyou-url="thankyou.html" class="space-y-5 rounded-2xl border border-slate-200 bg-white/95 p-7 md:p-8 shadow-[0_18px_55px_-30px_rgba(15,23,42,0.35)] backdrop-blur">
 
-<div>
-<label for="contact-email" class="block text-sm font-medium text-gray-700">Email</label>
-<input id="contact-email" type="email" name="email" class="mt-1 w-full border rounded px-3 py-2" placeholder="you@example.com" required>
-</div>
+            <input type="hidden" name="_subject" value="[New Lead] Website contact form">
+            <input type="hidden" name="_next" value="https://rushintech.in/thankyou.html">
+            <input type="hidden" name="routing_email" value="prasannakumarkm@rushintech.in">
+            <input type="hidden" name="brand_signature" value="Founder | RushIn Technologies | info@rushintech.in | www.rushintech.in">
 
-<div>
-<label for="contact-message" class="block text-sm font-medium text-gray-700">Message</label>
-<textarea id="contact-message" name="message" class="mt-1 w-full border rounded px-3 py-2" rows="4" placeholder="How can we help you?" required></textarea>
-</div>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label for="contact-name" class="block text-sm font-semibold text-slate-700">Name</label>
+                <input id="contact-name" type="text" name="name" class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition" placeholder="Your name" required>
+              </div>
 
-<div>
-<button
-type="submit"
-class="bg-blue-600 text-white px-4 py-2 rounded w-full">
-Send Message
-</button>
+              <div>
+                <label for="contact-email" class="block text-sm font-semibold text-slate-700">Email</label>
+                <input id="contact-email" type="email" name="email" class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition" placeholder="you@example.com" required>
+              </div>
+            </div>
 
-<p class="text-xs text-gray-500 text-center mt-2">
-We usually reply within 24 hours.
-</p>
+            <div>
+              <label for="contact-inquiry" class="block text-sm font-semibold text-slate-700">Inquiry Type</label>
+              <select id="contact-inquiry" name="inquiry_type" data-subject-select class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition" required>
+                <option value="lead">Business / Sales</option>
+                <option value="support">Support</option>
+                <option value="career">Career Application</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
 
-<p class="text-center text-sm mt-3">
-Or message us directly on
-<a href="https://wa.me/919019660247" class="text-blue-600">WhatsApp</a>
-</p>
+            <div>
+              <label for="contact-message" class="block text-sm font-semibold text-slate-700">Message</label>
+              <textarea id="contact-message" name="message" class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition" rows="5" placeholder="Tell us about your project or requirement" required></textarea>
+            </div>
 
-</form>
-</div>
+            <div class="space-y-3">
+              <button type="submit" class="w-full rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 px-4 py-3 font-semibold text-white shadow-sm transition hover:from-blue-700 hover:to-indigo-700 focus:ring-2 focus:ring-blue-300 focus:outline-none">
+                Send Message
+              </button>
 
-
+              <p class="text-xs text-slate-500 text-center">We'll get back within 24 hours.</p>
+              <p class="text-sm text-center text-slate-600">Need a quick response? <a href="https://wa.me/919019660247" class="text-blue-600 font-medium hover:underline">Chat on WhatsApp</a></p>
+              <p data-form-status class="hidden text-sm text-center rounded-md px-3 py-2" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
 
-    <!-- Full Width Google Map -->
+    <!-- Location Map -->
 
-<div class="w-full mt-12">
+<section class="py-14 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 md:p-7 shadow-sm">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-5">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-wide text-blue-700">Visit Our Office</p>
+          <h3 class="mt-1 text-2xl font-bold text-slate-900">RushIn Technologies, Bengaluru</h3>
+          <p class="mt-1 text-sm text-slate-600">Prefer in-person discussions? Schedule a meeting and meet our team.</p>
+        </div>
+        <a href="https://maps.google.com/?q=HSR+Layout+Bengaluru+Karnataka+India" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100">Open in Google Maps</a>
+      </div>
 
-<iframe
-src="https://www.google.com/maps?q=HSR+Layout+Bengaluru+Karnataka+India&output=embed"
-title="RushIn Technologies office location on Google Maps"
-width="100%"
-height="420"
-loading="lazy"
-class="w-full border-0">
-</iframe>
-
-</div>
+      <div class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+        <iframe
+        src="https://www.google.com/maps?q=HSR+Layout+Bengaluru+Karnataka+India&output=embed"
+        title="RushIn Technologies office location on Google Maps"
+        width="100%"
+        height="420"
+        loading="lazy"
+        class="w-full border-0">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ===== Final CTA Section ===== -->
 
@@ -1464,7 +1622,7 @@ Get Free Consultation
 </a>
 
 <a href="#services"
-class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-105 transition duration-200">
+class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-100 transition duration-200">
 Explore Services
 </a>
 
@@ -1476,148 +1634,107 @@ Explore Services
 
 </section>
     <!-- ====== Footer ====== -->
-    <footer class="bg-gray-900 text-gray-300">
+    <footer class="relative overflow-hidden bg-[#081326] text-slate-300">
 
-<div class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-10">
-
-<!-- Company -->
-
-<div>
-
-<h3 class="text-xl font-bold text-white">
-RushIn Technologies
-</h3>
-
-<p class="mt-3 text-gray-400 text-sm">
-Rush Into Innovation. We help startups and businesses grow through modern technology, digital marketing, AI automation, and scalable digital solutions.
-</p>
-
-<p class="mt-4 text-sm text-gray-400">
-📍 Bengaluru, Karnataka, India
-</p>
-
-<p class="text-sm text-gray-400">
-📞 +91 9019660247
-</p>
-
-<p class="text-sm text-gray-400">
-✉️ prasannakumarkm@rushintech.in
-</p>
-
+<div class="absolute inset-0 pointer-events-none">
+  <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl"></div>
+  <div class="absolute -bottom-24 right-8 h-72 w-72 rounded-full bg-emerald-400/15 blur-3xl"></div>
 </div>
 
-<!-- Services -->
+<div class="relative max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-12 gap-10">
 
-<div>
+<div class="md:col-span-4">
+  <h3 class="text-2xl font-bold text-white">RushIn Technologies</h3>
+  <p class="mt-3 text-sm leading-7 text-slate-300">
+    Rush Into Innovation. We help startups and businesses launch, automate, and scale with modern web engineering, AI systems, and performance marketing.
+  </p>
 
-<h4 class="text-lg font-semibold text-white">
-Services
-</h4>
+  <div class="mt-6 grid grid-cols-2 gap-3 text-xs">
+    <div class="rounded-lg border border-slate-700/70 bg-white/5 px-3 py-2">
+      <p class="font-semibold text-white">Response</p>
+      <p class="mt-1 text-slate-300">Within 24 hours</p>
+    </div>
+    <div class="rounded-lg border border-slate-700/70 bg-white/5 px-3 py-2">
+      <p class="font-semibold text-white">Location</p>
+      <p class="mt-1 text-slate-300">Bengaluru, India</p>
+    </div>
+  </div>
 
-<ul class="mt-4 space-y-2 text-sm">
-
-<li>Web Development</li>
-<li>Digital Marketing</li>
-<li>Lead Generation</li>
-<li>Social Media Management</li>
-<li>AI Automation</li>
-<li>Startup Consulting</li>
-
-</ul>
-
+  <div class="mt-6 text-sm space-y-1.5 text-slate-300">
+    <p>Phone: <a href="tel:+919019660247" class="text-white hover:text-blue-300">+91 9019660247</a></p>
+    <p>General Inquiries: <a href="mailto:info@rushintech.in" class="text-white hover:text-blue-300">info@rushintech.in</a></p>
+    <p>Support: <a href="mailto:support@rushintech.in" class="text-white hover:text-blue-300">support@rushintech.in</a></p>
+  </div>
 </div>
 
-
-
-<!-- Quick Links -->
-
-<div>
-
-<h4 class="text-lg font-semibold text-white">
-Quick Links
-</h4>
-
-<ul class="mt-4 space-y-2 text-sm">
-
-<li><a href="index.html" class="hover:text-white">Home</a></li>
-<li><a href="index.html#services" class="hover:text-white">Services</a></li>
-<li><a href="index.html#internship" class="hover:text-white">Internship</a></li>
-<li><a href="contact.html" class="hover:text-white">Contact</a></li>
-
-</ul>
-
+<div class="md:col-span-3">
+  <h4 class="text-lg font-semibold text-white">Services</h4>
+  <ul class="mt-4 space-y-2.5 text-sm text-slate-300">
+    <li><a href="#services" class="hover:text-white">Web Development</a></li>
+    <li><a href="#marketing" class="hover:text-white">Digital Marketing</a></li>
+    <li><a href="#leads" class="hover:text-white">Lead Generation</a></li>
+    <li><a href="#ai" class="hover:text-white">AI Automation</a></li>
+    <li><a href="#consulting" class="hover:text-white">Startup Consulting</a></li>
+    <li><a href="#internship" class="hover:text-white">Internship Programs</a></li>
+  </ul>
 </div>
 
+<div class="md:col-span-2">
+  <h4 class="text-lg font-semibold text-white">Company</h4>
+  <ul class="mt-4 space-y-2.5 text-sm text-slate-300">
+    <li><a href="index.html" class="hover:text-white">Home</a></li>
+    <li><a href="about.html" class="hover:text-white">About</a></li>
+    <li><a href="index.html#process" class="hover:text-white">Our Process</a></li>
+    <li><a href="index.html#why-us" class="hover:text-white">Why Choose Us</a></li>
+    <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+  </ul>
+</div>
 
+<div class="md:col-span-3">
+  <h4 class="text-lg font-semibold text-white">Contact Channels</h4>
 
-<!-- Contact -->
+  <div class="mt-4 space-y-3 text-sm text-slate-300">
+    <p>Business / Sales: <a href="mailto:sales@rushintech.in" class="text-white hover:text-emerald-300">sales@rushintech.in</a></p>
+    <p>Careers: <a href="mailto:careers@rushintech.in" class="text-white hover:text-emerald-300">careers@rushintech.in</a></p>
+    <p>WhatsApp: <a href="https://wa.me/919019660247" class="text-white hover:text-emerald-300">+91 9019660247</a></p>
+  </div>
 
-<div>
-
-<h4 class="text-lg font-semibold text-white">
-Contact
-</h4>
-
-<ul class="mt-4 space-y-2 text-sm">
-
-<li>
-📧 
-<a href="mailto:prasannakumarkm@rushintech.in" class="hover:text-white">
-prasannakumarkm@rushintech.in
-</a>
-</li>
-
-<li>
-📱 
-<a href="https://wa.me/919019660247" class="hover:text-white">
-+91 9019660247
-</a>
-</li>
-
-<li>
-📸 
-<a href="https://instagram.com/rushintech" class="hover:text-white">
-Instagram
-</a>
-</li>
-
-<li>
-💼 
-<a href="https://linkedin.com/company/rushintechnologies" class="hover:text-white">
-LinkedIn
-</a>
-</li>
-
-</ul>
-
+  <div class="mt-5 flex items-center gap-3">
+    <a href="https://instagram.com/rushintech" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-600 bg-white/5 text-slate-200 hover:border-blue-400 hover:text-white" aria-label="Instagram" title="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2C4.239 2 2 4.239 2 7v10c0 2.761 2.239 5 5 5h10c2.761 0 5-2.239 5-5V7c0-2.761-2.239-5-5-5H7zm8 3a1 1 0 110 2 1 1 0 010-2zM12 8a4 4 0 100 8 4 4 0 000-8zM5 7a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7z"/></svg>
+    </a>
+    <a href="https://linkedin.com/company/rushintechnologies" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-600 bg-white/5 text-slate-200 hover:border-blue-400 hover:text-white" aria-label="LinkedIn" title="LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8h4.48V24H.24zM8.98 8h4.3v2.16h.06c.6-1.14 2.06-2.34 4.24-2.34 4.54 0 5.38 2.98 5.38 6.86V24h-4.48v-7.2c0-1.72-.03-3.93-2.4-3.93-2.4 0-2.77 1.88-2.77 3.81V24H8.98V8z"/></svg>
+    </a>
+    <a href="mailto:info@rushintech.in" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-600 bg-white/5 text-slate-200 hover:border-emerald-400 hover:text-white" aria-label="Email" title="Email">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 13.5L0 6.75V18c0 1.38 1.12 2.5 2.5 2.5h19c1.38 0 2.5-1.12 2.5-2.5V6.75L12 13.5zM12 11.25L24 4.5V3.5C24 2.12 22.88 1 21.5 1h-19C1.12 1 0 2.12 0 3.5v1L12 11.25z"/></svg>
+    </a>
+  </div>
 </div>
 
 </div>
 
-
-
-<!-- Bottom Footer -->
-
-<div class="border-t border-gray-700 text-center py-6 text-sm text-gray-400">
-
-© <span id="year"></span> RushIn Technologies. All rights reserved.
-
+<div class="relative border-t border-slate-700/80">
+  <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-slate-400">
+    <p>© <span id="year"></span> RushIn Technologies. All rights reserved.</p>
+    <p>We provide services all over India. Designed for modern startups. Built in Bengaluru.</p>
+  </div>
 </div>
 
 </footer>
 
     <!-- Floating social icons (bottom-right, above WhatsApp) -->
     <div id="floatingSocial" class="fixed right-6 bottom-28 z-50 flex flex-col gap-3">
-      <a href="https://www.instagram.com/rushintech" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram" class="bg-white p-2 rounded-full shadow text-gray-700 hover:bg-blue-600 hover:text-white">
+      <a href="https://www.instagram.com/rushintech" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram" class="backdrop-blur bg-slate-900/85 p-2.5 rounded-full shadow text-slate-100 border border-slate-700 hover:bg-blue-600 hover:border-blue-400 hover:text-white">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2C4.239 2 2 4.239 2 7v10c0 2.761 2.239 5 5 5h10c2.761 0 5-2.239 5-5V7c0-2.761-2.239-5-5-5H7zm8 3a1 1 0 110 2 1 1 0 010-2zM12 8a4 4 0 100 8 4 4 0 000-8zM5 7a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7z"/></svg>
       </a>
-      <a href="https://www.linkedin.com/company/rushintechnologies" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" class="bg-white p-2 rounded-full shadow text-gray-700 hover:bg-blue-600 hover:text-white">
+      <a href="https://www.linkedin.com/company/rushintechnologies" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" class="backdrop-blur bg-slate-900/85 p-2.5 rounded-full shadow text-slate-100 border border-slate-700 hover:bg-blue-600 hover:border-blue-400 hover:text-white">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8h4.48V24H.24zM8.98 8h4.3v2.16h.06c.6-1.14 2.06-2.34 4.24-2.34 4.54 0 5.38 2.98 5.38 6.86V24h-4.48v-7.2c0-1.72-.03-3.93-2.4-3.93-2.4 0-2.77 1.88-2.77 3.81V24H8.98V8z"/></svg>
       </a>
-      <a href="https://wa.me/919019660247" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp" class="bg-white p-2 rounded-full shadow text-gray-700 hover:bg-green-500 hover:text-white">
+      <a href="https://wa.me/919019660247" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp" class="backdrop-blur bg-slate-900/85 p-2.5 rounded-full shadow text-slate-100 border border-slate-700 hover:bg-emerald-500 hover:border-emerald-300 hover:text-white">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.88 11.88 0 0012 0C5.373 0 0 5.373 0 12c0 2.12.556 4.09 1.525 5.82L0 24l6.39-1.61A11.88 11.88 0 0012 24c6.627 0 12-5.373 12-12 0-3.21-1.253-6.19-3.48-8.52zM12 21.5c-1.5 0-2.96-.39-4.24-1.13l-.3-.17-3.78.95.96-3.68-.18-.3A9.5 9.5 0 0112 2.5c5.24 0 9.5 4.26 9.5 9.5S17.24 21.5 12 21.5zM17.1 14.4c-.27-.14-1.6-.79-1.84-.88-.24-.09-.42-.13-.6.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.6.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.56.12-.12.27-.32.4-.48.13-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.6-1.44-.82-1.97-.22-.51-.44-.44-.6-.45-.16-.02-.35-.02-.54-.02-.18 0-.48.06-.73.34-.24.27-.93.91-.93 2.22s.95 2.56 1.08 2.74c.13.18 1.87 2.86 4.53 3.9 1.27.54 2.26.86 3.04 1.1.9.29 1.72.25 2.37.15.72-.12 1.6-.66 1.83-1.3.23-.65.23-1.21.16-1.33-.07-.12-.26-.18-.53-.32z"/></svg>
       </a>
-      <a href="mailto:prasannakumarkm@rushintech.in" aria-label="Email" title="Email" class="bg-white p-2 rounded-full shadow text-gray-700 hover:bg-gray-700 hover:text-white">
+      <a href="mailto:info@rushintech.in" aria-label="Email" title="Email" class="backdrop-blur bg-slate-900/85 p-2.5 rounded-full shadow text-slate-100 border border-slate-700 hover:bg-slate-700 hover:border-slate-500 hover:text-white">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 13.5L0 6.75V18c0 1.38 1.12 2.5 2.5 2.5h19c1.38 0 2.5-1.12 2.5-2.5V6.75L12 13.5zM12 11.25L24 4.5V3.5C24 2.12 22.88 1 21.5 1h-19C1.12 1 0 2.12 0 3.5v1L12 11.25z"/></svg>
       </a>
     </div>

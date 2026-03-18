@@ -46,6 +46,7 @@ Chat on WhatsApp
 <a href="#home" class="flex items-center gap-3">
 
 <img src="assets/images/logo/logo-white.svg"
+alt="RushIn Technologies logo"
 class="h-10 w-10 header-logo object-contain">
 
 <div>
@@ -298,7 +299,10 @@ Get in Touch
 
 <ul class="mt-6 text-sm space-y-2">
 
-<li>Email: prasannakumarkm@rushintech.in</li>
+<li>General Inquiries: <a href="mailto:info@rushintech.in" class="text-blue-600">info@rushintech.in</a></li>
+<li>Support: <a href="mailto:support@rushintech.in" class="text-blue-600">support@rushintech.in</a></li>
+<li>Business / Sales: <a href="mailto:sales@rushintech.in" class="text-blue-600">sales@rushintech.in</a></li>
+<li>Careers: <a href="mailto:careers@rushintech.in" class="text-blue-600">careers@rushintech.in</a></li>
 <li>Phone: +91 9019660247</li>
 <li>Instagram: @rushintech</li>
 <li>LinkedIn: RushIn Technologies</li>
@@ -308,29 +312,49 @@ Get in Touch
 </div>
 
 
-<form class="space-y-4 bg-white p-6 rounded shadow">
+<form action="https://formspree.io/f/mvzwwgvw" method="POST" data-subject-routing="true" data-ajax-form="true" data-thankyou-url="thankyou.html" class="space-y-4 bg-white p-6 rounded shadow">
+
+<input type="hidden" name="_subject" value="[New Lead] Website contact form">
+<input type="hidden" name="_next" value="https://rushintech.in/thankyou.html">
+<input type="hidden" name="routing_email" value="prasannakumarkm@rushintech.in">
+<input type="hidden" name="brand_signature" value="Founder | RushIn Technologies | info@rushintech.in | www.rushintech.in">
 
 <input
 type="text"
+name="name"
 placeholder="Your Name"
 class="w-full border px-3 py-2 rounded">
 
 <input
 type="email"
+name="email"
 placeholder="Your Email"
 class="w-full border px-3 py-2 rounded">
 
+<label for="legacy-contact-inquiry" class="sr-only">Inquiry Type</label>
+<select id="legacy-contact-inquiry" name="inquiry_type" data-subject-select class="w-full border px-3 py-2 rounded" required>
+<option value="lead">Business / Sales</option>
+<option value="support">Support</option>
+<option value="career">Career Application</option>
+<option value="general">General Inquiry</option>
+</select>
+
 <textarea
 rows="4"
+name="message"
 placeholder="Your Message"
 class="w-full border px-3 py-2 rounded"></textarea>
 
 <button
+type="submit"
 class="bg-blue-600 text-white px-4 py-2 rounded">
 
 Send Message
-
 </button>
+
+<p class="text-sm text-gray-500">We'll get back within 24 hours.</p>
+
+<p data-form-status class="hidden text-sm text-center rounded-md px-3 py-2" aria-live="polite"></p>
 
 </form>
 
@@ -365,7 +389,10 @@ Rush Into Innovation
 
 <div>
 
-<p>Email: prasannakumarkm@rushintech.in</p>
+<p>General Inquiries: <a href="mailto:info@rushintech.in" class="hover:text-white">info@rushintech.in</a></p>
+<p>Support: <a href="mailto:support@rushintech.in" class="hover:text-white">support@rushintech.in</a></p>
+<p>Business / Sales: <a href="mailto:sales@rushintech.in" class="hover:text-white">sales@rushintech.in</a></p>
+<p>Careers: <a href="mailto:careers@rushintech.in" class="hover:text-white">careers@rushintech.in</a></p>
 <p>Phone: +91 9019660247</p>
 
 </div>
@@ -385,7 +412,7 @@ Rush Into Innovation
 			<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.88 11.88 0 0012 0C5.373 0 0 5.373 0 12c0 2.12.556 4.09 1.525 5.82L0 24l6.39-1.61A11.88 11.88 0 0012 24c6.627 0 12-5.373 12-12 0-3.21-1.253-6.19-3.48-8.52zM12 21.5c-1.5 0-2.96-.39-4.24-1.13l-.3-.17-3.78.95.96-3.68-.18-.3A9.5 9.5 0 0112 2.5c5.24 0 9.5 4.26 9.5 9.5S17.24 21.5 12 21.5zM17.1 14.4c-.27-.14-1.6-.79-1.84-.88-.24-.09-.42-.13-.6.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.6.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.56.12-.12.27-.32.4-.48.13-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.6-1.44-.82-1.97-.22-.51-.44-.44-.6-.45-.16-.02-.35-.02-.54-.02-.18 0-.48.06-.73.34-.24.27-.93.91-.93 2.22s.95 2.56 1.08 2.74c.13.18 1.87 2.86 4.53 3.9 1.27.54 2.26.86 3.04 1.1.9.29 1.72.25 2.37.15.72-.12 1.6-.66 1.83-1.3.23-.65.23-1.21.16-1.33-.07-.12-.26-.18-.53-.32z"/></svg>
 		</a>
 
-		<a href="mailto:prasannakumarkm@rushintech.in" title="Email" aria-label="Email" class="text-gray-200 hover:text-white">
+		<a href="mailto:info@rushintech.in" title="Email" aria-label="Email" class="text-gray-200 hover:text-white">
 			<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 13.5L0 6.75V18c0 1.38 1.12 2.5 2.5 2.5h19c1.38 0 2.5-1.12 2.5-2.5V6.75L12 13.5zM12 11.25L24 4.5V3.5C24 2.12 22.88 1 21.5 1h-19C1.12 1 0 2.12 0 3.5v1L12 11.25z"/></svg>
 		</a>
 	</div>
@@ -426,7 +453,7 @@ Rush Into Innovation
 	<a href="https://wa.me/919019660247" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp" class="bg-white p-2 rounded-full shadow text-gray-700 hover:bg-green-500 hover:text-white">
 		<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.88 11.88 0 0012 0C5.373 0 0 5.373 0 12c0 2.12.556 4.09 1.525 5.82L0 24l6.39-1.61A11.88 11.88 0 0012 24c6.627 0 12-5.373 12-12 0-3.21-1.253-6.19-3.48-8.52zM12 21.5c-1.5 0-2.96-.39-4.24-1.13l-.3-.17-3.78.95.96-3.68-.18-.3A9.5 9.5 0 0112 2.5c5.24 0 9.5 4.26 9.5 9.5S17.24 21.5 12 21.5zM17.1 14.4c-.27-.14-1.6-.79-1.84-.88-.24-.09-.42-.13-.6.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.6.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.56.12-.12.27-.32.4-.48.13-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.6-1.44-.82-1.97-.22-.51-.44-.44-.6-.45-.16-.02-.35-.02-.54-.02-.18 0-.48.06-.73.34-.24.27-.93.91-.93 2.22s.95 2.56 1.08 2.74c.13.18 1.87 2.86 4.53 3.9 1.27.54 2.26.86 3.04 1.1.9.29 1.72.25 2.37.15.72-.12 1.6-.66 1.83-1.3.23-.65.23-1.21.16-1.33-.07-.12-.26-.18-.53-.32z"/></svg>
 	</a>
-	<a href="mailto:prasannakumarkm@rushintech.in" aria-label="Email" title="Email" class="bg-white p-2 rounded-full shadow text-gray-700 hover:bg-gray-700 hover:text-white">
+	<a href="mailto:info@rushintech.in" aria-label="Email" title="Email" class="bg-white p-2 rounded-full shadow text-gray-700 hover:bg-gray-700 hover:text-white">
 		<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 13.5L0 6.75V18c0 1.38 1.12 2.5 2.5 2.5h19c1.38 0 2.5-1.12 2.5-2.5V6.75L12 13.5zM12 11.25L24 4.5V3.5C24 2.12 22.88 1 21.5 1h-19C1.12 1 0 2.12 0 3.5v1L12 11.25z"/></svg>
 	</a>
 </div>
