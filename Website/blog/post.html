@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Post | RushIn Technologies</title>
+<meta name="description" content="Read expert blog insights from RushIn Technologies on AI automation, digital marketing, and lead generation.">
+<link rel="canonical" href="https://rushintech.in/blog/post.html">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="RushIn Technologies Blog Post">
+<meta property="og:description" content="Practical insights for startups, small businesses, and real estate brands in India.">
+<meta property="og:type" content="article">
+
+<link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="../src/css/tailwind.css">
+<link rel="stylesheet" href="../assets/css/blog.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-md shadow-sm">
+    <div class="max-w-6xl mx-auto px-5 md:px-6 py-3.5 flex items-center justify-between">
+      <a href="../index.html" class="group flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-50 to-emerald-50 ring-1 ring-slate-200 shadow-sm">
+          <img src="../assets/images/logo.png" class="w-7 h-7" alt="RushIn Technologies logo">
+        </span>
+        <div class="leading-tight">
+          <p class="text-lg font-semibold tracking-tight text-slate-900 md:text-[1.35rem]">RushIn Technologies</p>
+          <p class="text-xs text-slate-500">Blog Post</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700">
+        <a href="../index.html" class="hover:text-blue-600 transition">Home</a>
+        <a href="index.html" class="hover:text-blue-600 transition">All Blogs</a>
+        <a href="../contact.html" class="hover:text-blue-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="py-12 md:py-14">
+    <section class="max-w-4xl mx-auto px-6 mb-6">
+      <a href="index.html" class="inline-flex items-center text-sm font-semibold text-blue-700 hover:text-blue-800">← Back to all blogs</a>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-6">
+      <div id="blogPostContainer" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white mt-12">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-slate-500">
+      <p>© <span id="year"></span> RushIn Technologies. All rights reserved.</p>
+      <a href="../index.html" class="text-blue-700 hover:text-blue-800">Back to Homepage</a>
+    </div>
+  </footer>
+
+  <script>
+window.BLOG_DATA_PATH = "../data/blogs.json";
+window.BLOG_ASSET_BASE = "../";
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+    <script src="../data/blogs.js"></script>
+  <script src="../assets/js/blogs.js"></script>
+</body>
+</html>

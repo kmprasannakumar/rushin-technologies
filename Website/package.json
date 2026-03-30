@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/css/tailwind.css --watch",
     "serve": "npx http-server -c-1 . -p 8080",
-    "images:fetch": "node ./tools/fetch-images.js"
+    "images:fetch": "node ./tools/fetch-images.js",
+    "blogs:build": "node ./tools/build-blogs-data.js"
   },
   "author": "RushIn Technologies",
   "license": "MIT",
