@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RushIn Estates | Buy & Sell Properties in Bengaluru</title>
+  <meta name="description" content="Browse verified property listings by RushIn Estates to buy and sell properties in Bengaluru, including apartments, villas, plots, resale flats, and commercial spaces.">
+  <link rel="canonical" href="https://rushintech.in/estates/properties.html">
+  <meta name="robots" content="index, follow">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="/estates/">
+        <img src="images/logo.png" alt="RushIn Estates logo">
+        <div>
+          <strong>RushIn Estates</strong><br>
+          <small>Property Listings</small>
+        </div>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="estatesNav" aria-label="Toggle navigation">
+        Menu
+      </button>
+
+      <nav class="nav-links" id="estatesNav" aria-label="Estates Navigation">
+        <a href="/estates/">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="contact.html">Contact</a>
+        <a class="main-site-link" href="/">RushIn Technologies</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="listing-head">
+        <p class="hero-tagline">Rush Into Your Dream Property</p>
+        <h1 class="page-title">Property Listings</h1>
+        <p class="page-subtitle">Explore verified opportunities across Bengaluru and find the right property for investment or end-use.</p>
+      </div>
+
+      <section class="filter-wrap" aria-label="Property Filters">
+        <h2 class="filter-title">Filter Properties</h2>
+
+        <div id="listingTypeToggle" class="listing-type-toggle" role="group" aria-label="Listing Type">
+          <button type="button" class="listing-type-btn is-active" data-listing-type="buy" aria-pressed="true">Buy</button>
+          <button type="button" class="listing-type-btn" data-listing-type="rent" aria-pressed="false">Rent</button>
+        </div>
+
+        <div class="filter-row">
+          <div>
+            <label class="filter-label" for="searchFilter">Search</label>
+            <input id="searchFilter" class="filter-control" type="search" placeholder="Search by title, location, category" aria-label="Search properties">
+          </div>
+
+          <div>
+            <label class="filter-label" for="categoryFilter">Category</label>
+            <select id="categoryFilter" class="filter-control" title="Filter by category">
+              <option value="all">All Categories</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="filter-label" for="locationFilter">Location</label>
+            <select id="locationFilter" class="filter-control" title="Filter by location">
+              <option value="all">All Locations</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="filter-label" for="sortFilter">Sort By</label>
+            <select id="sortFilter" class="filter-control" title="Sort property list">
+              <option value="default">Recommended</option>
+              <option value="priceAsc">Price: Low to High</option>
+              <option value="priceDesc">Price: High to Low</option>
+              <option value="titleAsc">Title: A to Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-actions">
+          <button id="clearFilters" type="button" class="btn btn-outline">Clear Filters</button>
+        </div>
+      </section>
+
+      <p id="resultMeta" class="result-meta" aria-live="polite"></p>
+      <h2 class="listing-subhead">Available Properties in Bengaluru</h2>
+      <div id="propertyListing" class="grid" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-col" aria-label="About RushIn Estates">
+        <h3>RushIn Estates</h3>
+        <p>We help buyers, sellers, and investors discover verified real estate opportunities across Bengaluru.</p>
+      </section>
+
+      <section class="footer-col" aria-label="Footer navigation">
+        <h3>Quick Links</h3>
+        <a href="/estates/">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="contact.html">Contact</a>
+      </section>
+
+      <section class="footer-col" aria-label="Popular categories">
+        <h3>Property Segments</h3>
+        <p>Apartments and Villas</p>
+        <p>Plots and Resale Flats</p>
+        <p>Commercial Office, Shops, Showrooms</p>
+      </section>
+
+      <section class="footer-col" aria-label="Contact information">
+        <h3>Connect</h3>
+        <a href="tel:+919019660247">+91 9019660247</a>
+        <a href="mailto:info@rushintech.in">info@rushintech.in</a>
+        <a href="/">RushIn Technologies</a>
+      </section>
+    </div>
+
+    <div class="container footer-bottom">© <span id="year"></span> RushIn Estates. Built by RushIn Technologies.</div>
+  </footer>
+
+  <a class="sticky-whatsapp" target="_blank" rel="noopener noreferrer" href="https://wa.me/919019660247?text=Hi%20RushIn%20Estates%2C%20I%20need%20property%20assistance." aria-label="Chat on WhatsApp" title="Chat on WhatsApp"><svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M19.11 17.21c-.29-.15-1.72-.85-1.99-.95-.27-.1-.47-.15-.66.15-.2.29-.76.95-.94 1.14-.17.2-.35.22-.64.07-.29-.15-1.24-.46-2.36-1.48-.87-.78-1.46-1.75-1.63-2.05-.17-.29-.02-.45.13-.6.13-.13.29-.35.44-.52.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.66-1.58-.9-2.16-.24-.58-.48-.5-.66-.51-.17-.01-.37-.01-.56-.01-.2 0-.52.07-.79.37-.27.29-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.09 3.19 5.07 4.47.71.31 1.26.5 1.7.64.71.23 1.35.2 1.86.12.57-.09 1.72-.7 1.96-1.37.24-.67.24-1.24.17-1.36-.07-.12-.27-.2-.56-.35z"/><path fill="currentColor" d="M16.02 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.25.59 4.45 1.71 6.39L3.1 28.8l6.57-1.73a12.73 12.73 0 0 0 6.35 1.72h.01c7.06 0 12.8-5.74 12.8-12.8 0-3.42-1.33-6.63-3.76-9.05A12.72 12.72 0 0 0 16.02 3.2zm0 23.45h-.01a10.6 10.6 0 0 1-5.4-1.49l-.39-.23-3.9 1.03 1.04-3.8-.25-.39a10.63 10.63 0 0 1-1.64-5.66c0-5.88 4.78-10.66 10.66-10.66 2.84 0 5.5 1.1 7.5 3.11a10.57 10.57 0 0 1 3.12 7.54c0 5.88-4.79 10.66-10.67 10.66z"/></svg><span class="sr-only">Chat on WhatsApp</span></a>
+
+  <script src="js/nav.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
